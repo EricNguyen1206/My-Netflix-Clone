@@ -1,6 +1,9 @@
 .banner {
     position: relative;
     height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     color: #fff;
     object-fit: content;
 
@@ -38,7 +41,8 @@
     border: none;
     font-weight: 700;
     border-radius: .2rem;
-    padding: .5rem 1rem .5rem 2rem;
+    padding: .5rem 2rem;
+    margin-right: 1rem;
     background-color: rgba(51, 51, 51, 0.5);
 }
 
