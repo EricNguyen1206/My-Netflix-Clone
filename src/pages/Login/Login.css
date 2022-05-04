@@ -1,0 +1,92 @@
+.login {
+    position: relative;
+    height: 100%;
+    background: url("https://veneportal.com/noticias/wp-content/uploads/sites/2/2021/03/Netflix-d7bf70ec-1024x576.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.login__logo {
+    position: fixed;
+    left: 0;
+    width: 150px;
+    object-fit: contain;
+    padding-left: 20px;
+}
+
+.login__button {
+    position: fixed;
+    right: 0;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: .2rem;
+    padding: .5rem 2rem;
+    background-color: #e50914;
+}
+
+.login__gradient {
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-image: linear-gradient(
+        to top, 
+        rgba(0, 0, 0, .85) 0, 
+        rgba(0, 0, 0, 0) 60%, 
+        rgba(0, 0, 0, .85) 100%
+    );
+}
+
+.login__body {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.login__body > h1 {
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+}
+
+.login__body > h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.login__body > h3 {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.login__input {
+    margin: 20px;
+}
+
+.login__input > form > input {
+    padding: 9px;
+    outline: none;
+    height: 30px;
+    width: 30%;
+    border: none;
+    max-width: 600px;
+}
+
+.login__getStarted {
+    padding: 16px 20px;
+    font-style: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+}

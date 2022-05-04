@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./List.css";
-import axios from "./axios";
+import axios from "../../axios";
 
 function List({ title, fetchUrl, isLargeRow = false }) {
     const [movies, setMovies] = useState([]);

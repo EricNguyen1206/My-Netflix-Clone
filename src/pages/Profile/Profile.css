@@ -1,0 +1,96 @@
+.profile {
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+.profile__body {
+    width: fit-content;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.profile__body > h1 {
+    display: flex;
+    justify-self: start;
+    border-bottom: 1px solid #aaa;
+}
+
+.profile__content {
+    display: flex;
+    margin-top: 20px;
+}
+
+.profile__content > img {
+    width: 100px;
+    height: 100px;
+}
+
+.profile__detail {
+    width: 30vw;
+    min-width: 300px;
+    margin-left: 10px;
+}
+
+.profile__detail--email {
+    display: flex;
+    justify-self: start;
+    background-color: #aaa;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.profile__detail > h2 {
+    display: flex;
+    justify-self: start;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #aaa;
+}
+
+.profile__detail--renewalDate {
+    display: flex;
+    justify-self: start;
+    margin-bottom: 12px;
+}
+
+.profile__detail--list {
+    list-style: none;
+    padding: 0 16px;
+}
+
+.profile__detail--plantItem {
+    display: flex;
+    margin-bottom: 16px;
+    justify-content: space-between;
+    opacity: .8;
+}
+.profile__detail--plantItem:hover {
+    opacity: 1;
+}
+.profile__detail--text {
+    font-size: .8rem;
+}
+.profile__detail--plansBtn {
+    padding: 8px 16px;
+    font-size: .8rem;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+}
+.profile__detail--plansBtn.active {
+    background-color: #ccc;
+}
+
+.profile__detail--signout {
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #e50914;
+    border-radius: 1px;
+    border: none;
+}
+
+.profile__detail--signout:hover {
+    opacity: .8;
+}

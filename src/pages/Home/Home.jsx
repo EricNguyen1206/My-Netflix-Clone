@@ -1,14 +1,14 @@
 import React from "react";
-import "./HomeScreen.css";
-import Nav from "./Nav";
-import Banner from "./Banner";
-import request from "./request";
-import List from "./List";
+import "./Home.css";
+import Navbar from "../../components/Navbar/Navbar";
+import Banner from "../../components/Banner/Banner";
+import request from "../../request";
+import List from "../../components/List/List";
 
 function HomeScreen() {
     return (
         <div className="home">
-            <Nav />
+            <Navbar />
             <Banner />
             <List
                 title="NETFLIX ORIGINALS"
