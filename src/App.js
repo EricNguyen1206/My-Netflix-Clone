@@ -26,6 +26,7 @@ function App() {
         });
         return unsubcribe;
     }, [dispatch]);
+    console.log("user", user);
     return (
         <div className="app">
             <Router>

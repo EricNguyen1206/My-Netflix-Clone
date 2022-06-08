@@ -1,6 +1,9 @@
 .login {
     position: relative;
-    height: 100%;
+}
+.login__background {
+    position: relative;
+    height: 100vh;
     background: url("https://veneportal.com/noticias/wp-content/uploads/sites/2/2021/03/Netflix-d7bf70ec-1024x576.jpg") center no-repeat;
     background-size: cover;
 }
@@ -81,6 +84,10 @@
     width: 30%;
     border: none;
     max-width: 600px;
+}
+
+.login__input > form > button {
+    cursor: pointer;
 }
 
 .login__getStarted {

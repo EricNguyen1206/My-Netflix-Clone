@@ -1,18 +1,16 @@
 import React, { useEffect } from "react";
 import "./Profile.css";
 import Navbar from "../../components/Navbar/Navbar";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { auth, signOut } from "../../firebase";
 import { useNavigate } from "react-router-dom";
+import { logout } from "../../features/counterSlice";
 
 function Profile() {
     const user = useSelector((state) => state.user);
+    const dispatch = useDispatch();
     const navigate = useNavigate();
-    // useEffect(()=> {
-    //     if(!user) {
 
-    //     }
-    // }, [user])
     return (
         <div className="profile">
             <Navbar />
@@ -62,11 +60,14 @@ function Profile() {
                         </ul>
                         <button
                             className="profile__detail--signout"
-                            onClick={() =>
+                            onClick={() => {
                                 signOut(auth)
-                                    .then(() => console.log("Sign out ok"))
-                                    .catch((e) => console.log("Error:", e))
-                            }
+                                    .then(() => {
+                                        console.log("Sign out ok");
+                                    })
+                                    .catch((e) => console.log("Error:", e));
+                                dispatch(logout());
+                            }}
                         >
                             Sign out
                         </button>

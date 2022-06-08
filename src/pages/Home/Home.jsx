@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Banner from "../../components/Banner/Banner";
 import request from "../../request";
 import List from "../../components/List/List";
+import Footer from "../../components/Footer/Footer";
 
 function HomeScreen() {
     return (
@@ -25,6 +26,7 @@ function HomeScreen() {
                 title="Documentaries Movie"
                 fetchUrl={request.fetchDocumentariesMovie}
             />
+            <Footer />
         </div>
     );
 }
