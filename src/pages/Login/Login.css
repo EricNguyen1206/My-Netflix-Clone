@@ -4,7 +4,7 @@
 .login__background {
     position: relative;
     height: 100vh;
-    background: url("https://veneportal.com/noticias/wp-content/uploads/sites/2/2021/03/Netflix-d7bf70ec-1024x576.jpg") center no-repeat;
+    background: url("../../assets/images/misc/home-bg.jpg") center no-repeat;
     background-size: cover;
 }
 
@@ -97,3 +97,47 @@
     background-color: #e50914;
     border: none;
 }
+
+.hometv {
+    height: 360px;
+}
+
+.homemobile {
+    height: 480px;
+}
+
+.enjoy {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    border: 2px solid #333;
+}
+
+.enjoy .content {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    line-height: 1.6rem;
+}
+
+.hometv .content {
+    margin-left: 16%;
+    margin-right: 10%;
+}
+
+.enjoy .content h2 {
+    margin-bottom: 20px;
+}
+
+.enjoy .img {
+    width: 28%;
+}
+
+.homemobile .img {
+    width: 18%;
+    margin-left: 16%;
+    margin-right: 10%;
+}
+
+

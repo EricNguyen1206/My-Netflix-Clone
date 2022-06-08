@@ -4,6 +4,7 @@
 }
 
 .list__posters {
+    position: relative;
     display: flex;
     overflow-y: hidden;
     overflow-x:scroll;
@@ -11,13 +12,44 @@
 }
 
 .list__posters::-webkit-scrollbar {
-    display: none;
+    visibility: hidden;
+    width: 2px;
+    height: 8px;
+	background-color: #F5F5F5;
+}
+
+.list__posters::-webkit-scrollbar:hover {
+    visibility: visible;
+}
+
+.list__posters::-webkit-scrollbar-track
+{
+    visibility: hidden;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.list__posters::-webkit-scrollbar-track:hover {
+    visibility: visible;
+}
+
+.list__posters::-webkit-scrollbar-thumb
+{
+    visibility: hidden;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgba(226, 17, 33 ,1);
+}
+
+.list__posters::-webkit-scrollbar-thumb:hover  {
+    visibility: visible;
 }
 
 .list__poster {
+    position: relative;
     display: inline-block;
     flex: 1 0 auto;
-    max-height: 100px;
+    height: 100px;
+    width: 168px;
     object-fit: contain;
     margin-right: 10px;
     transition: transform 0.45s
@@ -28,6 +60,82 @@
     opacity: 1;
 }
 
+.list__poster img {
+    width: 100%;
+    height: 100%;
+}
+
 .list__posterLarge {
-    max-height: 250px;
+    height: 250px;
+}
+
+.list__poster .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.list__poster:hover .overlay {
+    display: block;
+}
+
+.list__poster .overlay p {
+    margin-left: 8px;
+    font-size: .8rem;
+}
+
+.movie-detail {
+    display: flex;
+    width: 100vw;
+    height: 250px;
+    background-color: #000;
+    transform: translateX(-20px);
+}
+
+.movie-detail .content {
+    width: 40%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movie-detail .content button {
+    width: 110px;
+    height: 32px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: rgba(226, 17, 33 ,0.5);
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.movie-detail .content button:hover {
+    background-color: rgba(226, 17, 33 ,1);
+    transition: all .2s;
+}
+
+.movie-detail .backdrop {
+    position: relative;
+    width: 60%;
+}
+.movie-detail .backdrop .backdrop__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #000 , transparent)
+}
+.movie-detail .backdrop img {
+    height: 100%;
+    width: 100%;
 }

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <div className="footer">
-            <h2 className="title" style={{ color: "white" }}>
+            <h2 className="title" style={{ color: "#ccc", fontSize: "1.2rem" }}>
                 Question? Contact us.
             </h2>
             <div className="detail">

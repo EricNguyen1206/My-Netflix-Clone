@@ -3,6 +3,8 @@ import "./Login.css";
 import Singup from "../../pages/Singup/Signup";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
+import hometv from "../../assets/images/misc/home-tv.jpg";
+import homemobile from "../../assets/images/misc/home-mobile.jpg";
 
 function Login() {
     const [signin, setSignin] = useState(false);
@@ -65,6 +67,25 @@ function Login() {
                             </div>
                         </>
                     )}
+                </div>
+            </div>
+            <div className="enjoy hometv">
+                <div className="content">
+                    <h2>Enjoy your TV.</h2>
+                    <span>
+                        Watch on smart TVs, PlayStation, XBox, Chromecash, Apple
+                        TV, Blu-ray players, and more.
+                    </span>
+                </div>
+                <img src={hometv} className="img" alt="Home TVs" />
+            </div>
+            <div className="enjoy homemobile">
+                <img src={homemobile} className="img" alt="Home Mobiles" />
+                <div className="content">
+                    <h2>Download your programes to watch on the go.</h2>
+                    <span>
+                        Save your data and watch all your favourites offline.
+                    </span>
                 </div>
             </div>
             <Footer />
