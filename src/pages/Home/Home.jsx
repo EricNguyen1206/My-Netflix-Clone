@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Banner from "../../components/Banner/Banner";
-import request from "../../request";
+import request from "../../Request";
 import List from "../../components/List/List";
 import Footer from "../../components/Footer/Footer";
 
