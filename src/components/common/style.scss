@@ -14,6 +14,10 @@
         font-size: 1.7rem;
         transform: translateX(-32%);
     }
+    @include mobile() {
+        font-size: .8rem;
+        padding: .4rem .8rem;
+    }
 }
 
 .btn {
