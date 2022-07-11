@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import "./Login.css";
-import Singup from "../../pages/Singup/Signup";
 import { Link } from "react-router-dom";
+
+import Singup from "../../pages/Singup/Signup";
 import Footer from "../../components/Footer/Footer";
 import hometv from "../../assets/images/misc/home-tv.jpg";
 import homemobile from "../../assets/images/misc/home-mobile.jpg";
+import "./Login.css";
 
 function Login() {
     const [signin, setSignin] = useState(false);

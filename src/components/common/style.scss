@@ -1,0 +1,32 @@
+@use "../../scss/" as *;
+.btn, .btn-primary, .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: .2rem;
+    cursor: pointer;
+    svg {
+        font-size: 1.7rem;
+        transform: translateX(-32%);
+    }
+}
+
+.btn {
+    color: #333;
+    background-color: #fff;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: rgba(51, 51, 51, 0.5);
+    &:hover {
+        color: #000;
+        background: #e6e6e6;
+        transition: all .2s;
+    }
+}

@@ -1,13 +1,15 @@
 import React, { useEffect } from "react";
-import "./Profile.css";
+import { useDispatch } from "react-redux";
+
 import Navbar from "../../components/Navbar/Navbar";
-import { useSelector, useDispatch } from "react-redux";
 import { auth, signOut } from "../../firebase";
 import { useNavigate } from "react-router-dom";
-import { logout } from "../../features/counterSlice";
+import { logout } from "../../redux/slices/userSlices";
+import "./Profile.css";
+import { useUser } from "../../hooks";
 
 function Profile() {
-    const user = useSelector((state) => state.user);
+    const { user } = useUser();
     const dispatch = useDispatch();
     const navigate = useNavigate();
 

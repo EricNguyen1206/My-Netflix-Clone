@@ -4,7 +4,7 @@ const initialState = {
     user: null,
 };
 
-export const counterSlice = createSlice({
+export const userSlice = createSlice({
     name: "user",
     initialState,
     // The `reducers` field lets us define reducers and generate associated actions
@@ -19,8 +19,8 @@ export const counterSlice = createSlice({
     },
 });
 
-export const { login, logout } = counterSlice.actions;
+export const { login, logout } = userSlice.actions;
 
 export const selectUser = (state) => state.user.user;
 
-export default counterSlice.reducer;
+export default userSlice.reducer;
