@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 import { auth } from "./firebase";
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import Profile from "./pages/Profile/Profile";
-import { login, logout, selectUser } from "./features/counterSlice";
+import { login, logout, selectUser } from "./redux/slices/userSlices";
 
 function App() {
     const user = useSelector(selectUser);
@@ -26,7 +26,6 @@ function App() {
         });
         return unsubcribe;
     }, [dispatch]);
-    console.log("user", user);
     return (
         <div className="app">
             <Router>
